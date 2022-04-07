@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -111,6 +111,19 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EIl-Fo-cHG">
+                                <rect key="frame" x="92" y="605" width="221" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtF-H1-Xck">
+                                <rect key="frame" x="29" y="59" width="123" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset Favorites"/>
+                                <connections>
+                                    <action selector="pressResetFavs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i2p-X6-Bx9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -123,9 +136,9 @@
                         <outlet property="lyricsTextView" destination="g3M-XV-zG4" id="oEG-Zw-arX"/>
                         <outlet property="musicSingerLbl" destination="Ur8-Jt-hAH" id="2ei-hr-faW"/>
                         <outlet property="musicTitleLbl" destination="jfO-kd-oIk" id="0d2-79-8Rf"/>
-                        <outlet property="nextMusicBtn" destination="yEi-N9-ZAc" id="9di-Fq-ubB"/>
                         <outlet property="playMusicBtn" destination="aqV-oE-EX4" id="KCc-hL-pBV"/>
                         <outlet property="prevMusicBtn" destination="Gm2-jo-c46" id="9Mp-tU-Wjf"/>
+                        <outlet property="resetFavesBtn" destination="jtF-H1-Xck" id="eS4-o9-dnU"/>
                         <outlet property="timeLeftLbl" destination="njA-8i-Vx4" id="z9c-4X-WOe"/>
                     </connections>
                 </viewController>
