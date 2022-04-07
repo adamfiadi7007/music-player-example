@@ -107,7 +107,10 @@ class ViewController: UIViewController {
         print("Status music number \(currMusic) is \(arrOfMusic[currMusic].isFavorite)")
     }
     
-    @IBAction func pressResetFaves(_ sender: Any) {
+//    @IBAction func pressResetFaves(_ sender: Any) {
+//
+//    }
+    @IBAction func pressResetFavs(_ sender: Any) {
         for i in 0...arrOfMusic.count-1 {
             arrOfMusic[i].isFavorite = false
         }
